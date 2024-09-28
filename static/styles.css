@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #373d3f;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 46px;  /* フォントサイズを大きく */
+    letter-spacing: 1px; /* 文字間を広げてスタイリッシュに */
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px; /* パラグラフの下に余白を追加 */
+}
+
+form {
+    background: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px; /* パディングを増やして余裕を持たせる */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* シャドウを強く */
+    transition: box-shadow 0.3s; /* ホバー時の変化をスムーズに */
+}
+
+form:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* ホバー時の影を強化 */
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 10px; /* 入力フィールドのパディング */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* 境界線の色変更をスムーズに */
+    box-sizing: border-box; /* 幅の計算にパディングを含める */
+}
+
+input[type="file"]:focus {
+    border-color: #5bc2dc; /* フォーカス時に色を変更 */
+    outline: none; /* デフォルトのアウトラインを消す */
+}
+
+.button-group {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: space-between; /* ボタンの間にスペースを均等に */
+    margin-top: 10px; /* 入力フィールドとの間にマージンを追加 */
+}
+
+.convert-button {
+    color: #fff;
+    border-top: 4px solid #48ceec;
+    border-right: 4px solid #0a595f;
+    border-bottom: 4px solid #0f6774;
+    border-left: 4px solid #8cf9f0;
+    border-radius: 0;
+    background: #1194a3;
+    padding: 12px 15px; /* ボタンのパディングを調整 */
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* 幅を均等に */
+    font-size: 18px; /* フォントサイズを大きく */
+    transition: background-color 0.3s; /* 背景色変更をスムーズに */
+    margin-right: 5px; /* ボタンの間にマージンを追加 */
+}
+
+.file-button:last-child {
+    margin-right: 0; /* 最後のボタンのマージンを削除 */
+}
+
+.convert-button:hover {
+    color: #fff;
+  border-top: 4px solid #0995a5;
+  border-right: 4px solid #8ce9f9;
+  border-bottom: 4px solid #48dbec;
+  border-left: 4px solid #35a5a9;
+}
+
+.file-button {
+    color: #fff;
+    border-top: 4px solid #48ecc4;
+    border-right: 4px solid #0a5f4a;
+    border-bottom: 4px solid #0f745b;
+    border-left: 4px solid #8cf9de;
+    border-radius: 0;
+    background: #11a37f;
+    padding: 12px 15px; /* ボタンのパディングを調整 */
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1; /* 幅を均等に */
+    font-size: 18px; /* フォントサイズを大きく */
+    transition: background-color 0.3s; /* 背景色変更をスムーズに */
+    margin-right: 5px; /* ボタンの間にマージンを追加 */
+}
+.file-button:hover {
+    color: #fff;
+  border-top: 4px solid #0f745b;
+  border-right: 4px solid #8cf9de;
+  border-bottom: 4px solid #48ecc4;
+  border-left: 4px solid #0a5f4a;
+}
+
+
+@media (max-width: 600px) {
+    form {
+        padding: 20px; /* スマホ向けのパディング調整 */
+    }
+
+    h1 {
+        font-size: 28px; /* スマホ向けのフォントサイズ調整 */
+    }
+}
+
+header {
+    display: flex;
+    justify-content: flex-end; /* 右端に配置 */
+    padding: 20px; /* 上下の余白を設定 */
+    background-color: #f8f8f8; /* 背景色を設定 */
+}
+
+.logo img {
+    max-width: 50%; /* 画像が親要素を超えないように */
+    height: auto; /* アスペクト比を保持 */
+}
+
+.name {
+    position: fixed; /* 固定位置に設定 */
+    bottom: 20px; /* 下からの距離 */
+    right: 20px; /* 右からの距離 */
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色と透過 */
+    padding: 10px; /* 内側の余白 */
+    border-radius: 5px; /* 角を丸く */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影を追加 */
+}
+
+.list {
+    list-style-type: none; /* デフォルトのドットを消す */
+    padding: 0; /* パディングを消す */
+    margin: 0; /* マージンを消す */
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.list li {
+    position: relative; /* ::before要素のために位置を設定 */
+    padding-left: 1.5em; /* アイコンとテキストの間にスペースを追加 */
+}
+
+.list::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f058";
+    font-weight: 900;
+    color: #2ac682;
+}
+
+.Cando {
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* アイコンとテキストを垂直に中央揃え */
+    justify-content: flex-start; /* 左端に揃える */
+    text-align: left;
+    padding-left: 35%;
+}

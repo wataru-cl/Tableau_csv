@@ -1,0 +1,4 @@
+﻿Caption,Formula,Data Type,Label,Datasource
+クラス切り替え,"1: 'A', 2: 'C', 3: 'D1', 4: 'D2'",real,パラメータ,
+A正答率,4/13,real,計算式,正解データ+ (正解データ)
+C正答率,5/50,real,計算式,正解データ+ (正解データ)

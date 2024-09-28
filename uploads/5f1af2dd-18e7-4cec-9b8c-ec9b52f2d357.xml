@@ -1,0 +1,19 @@
+<workbook>
+    <datasources>
+        <datasource caption="Sample DataSource">
+            <column caption="Sales" name="Sales" datatype="float">
+                <calculation formula="[Sales]"/>
+            </column>
+            <column caption="Profit" name="Profit" datatype="float">
+                <calculation formula="[Profit]"/>
+            </column>
+            <column caption="Region" name="Region" datatype="string">
+                <param-domain-type>string</param-domain-type>
+                <aliases>
+                    <alias key="North America" value="NA"/>
+                    <alias key="Europe" value="EU"/>
+                </aliases>
+            </column>
+        </datasource>
+    </datasources>
+</workbook>

@@ -1,0 +1,3 @@
+﻿Caption,Formula,Data Type,Label,Datasource
+Sales,[Sales],float,計算式,Sample DataSource
+Profit,[Profit],float,計算式,Sample DataSource
